@@ -27,7 +27,7 @@
 
             if (tempoTotal == 0)
             {
-                System.Environment.Exit(0);
+                Environment.Exit(0);
             }
 
             PreStart(tempoTotal * mulplicador);
