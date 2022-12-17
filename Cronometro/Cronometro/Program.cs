@@ -30,7 +30,7 @@
                 System.Environment.Exit(0);
             }
 
-            Start(tempoTotal * mulplicador);
+            PreStart(tempoTotal * mulplicador);
 
             Console.ReadKey();
         }
@@ -52,5 +52,18 @@
             Thread.Sleep(2500);
             Menu();
         }        
+
+        static void PreStart(int tempoTotal)
+        {
+            Console.Clear();
+            Console.WriteLine("Ready...");
+            Thread.Sleep(1000);
+            Console.WriteLine("Set...");
+            Thread.Sleep(1000);
+            Console.WriteLine("Go...");
+            Thread.Sleep(1500);
+
+            Start(tempoTotal);
+        }
     }
 }
