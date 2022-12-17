@@ -14,6 +14,10 @@
             Console.WriteLine("M - Minuto");
             Console.WriteLine("0 - Sair");
             Console.WriteLine("Quanto tempo deseja contar?");
+
+            string resposta = Console.ReadLine().ToLower();
+            Console.WriteLine(resposta);
+
             Console.ReadKey();
         }
 
