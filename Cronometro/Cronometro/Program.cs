@@ -15,8 +15,10 @@
             Console.WriteLine("0 - Sair");
             Console.WriteLine("Quanto tempo deseja contar?");
 
-            string resposta = Console.ReadLine().ToLower();
+            string resposta = Console.ReadLine().ToLower();            
+            char tipo = char.Parse(resposta.Substring(resposta.Length - 1, 1));
             Console.WriteLine(resposta);
+            Console.WriteLine(tipo);
 
             Console.ReadKey();
         }
