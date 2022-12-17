@@ -12,7 +12,7 @@
             Console.Clear();
             Console.WriteLine("S - Segundo");
             Console.WriteLine("M - Minuto");
-            Console.WriteLine("0 - Sair");
+            Console.WriteLine("0s - Sair");
             Console.Write("Quanto tempo deseja contar? ");
 
             string resposta = Console.ReadLine().ToLower();            
