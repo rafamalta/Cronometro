@@ -17,8 +17,10 @@
 
             string resposta = Console.ReadLine().ToLower();            
             char tipo = char.Parse(resposta.Substring(resposta.Length - 1, 1));
-            Console.WriteLine(resposta);
+            int tempo = int.Parse(resposta.Substring(0, resposta.Length - 1));
+            
             Console.WriteLine(tipo);
+            Console.WriteLine(tempo);
 
             Console.ReadKey();
         }
